@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:8.3.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: ticketing
+    ports:
+      - "3306:3306" # Expose MySQL port
+    volumes:
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql #inital database file to initialize db on spin up
+      - db-data:/var/lib/mysql
+      - db-data:/var/log/mysql
+
+volumes:
+  db-data:
