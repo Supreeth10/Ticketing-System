@@ -32,6 +32,6 @@ public class Event {
     @JoinColumn(name = "venue_id")
     private Venue venue;
 
-//    @Column(name="ticket_price")
-//    private BigDecimal ticketPrice;
+    @Column(name="ticket_price")
+    private BigDecimal ticketPrice;
 }

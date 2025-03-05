@@ -24,6 +24,7 @@ public class BookingService {
             throw new RuntimeException("User not found");
         }
         // check if there is enough inventory
+
         // get events info to also get venue info
         // create booking
         // send booking to order service on a kafka topic

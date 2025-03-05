@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-//@Builder
+@Builder
 @Getter
 @Setter
 public class EventInventoryResponse {
@@ -17,7 +17,7 @@ public class EventInventoryResponse {
     private String event;
     private Long capacity;
     private Venue venue;
-//    private BigDecimal ticketPrice;
+    private BigDecimal ticketPrice;
 
     // Custom constructor for easier object creation
     public EventInventoryResponse(String event, Long capacity, Venue venue) {
