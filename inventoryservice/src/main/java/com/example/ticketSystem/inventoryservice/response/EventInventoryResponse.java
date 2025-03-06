@@ -20,9 +20,9 @@ public class EventInventoryResponse {
     private BigDecimal ticketPrice;
 
     // Custom constructor for easier object creation
-    public EventInventoryResponse(String event, Long capacity, Venue venue) {
-        this.event = event;
-        this.capacity = capacity;
-        this.venue = venue;
-    }
+//    public EventInventoryResponse(String event, Long capacity, Venue venue) {
+//        this.event = event;
+//        this.capacity = capacity;
+//        this.venue = venue;
+//    }
 }

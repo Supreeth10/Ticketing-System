@@ -6,13 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class BookingResponse {
-    private Long bookingId;
-    private Long userId;
-    private Long eventId;
-    private Long ticketCount;
-    private String ticketPrice;
+public class VenueResponse {
+    private Long id;
+    private String name;
+    private Long totalCapacity;
 }
