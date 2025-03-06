@@ -1,4 +1,4 @@
-package com.example.ticketSystem.bookingservice.response;
+package com.example.ticketSystem.bookingservice.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class BookingResponse {
+public class BookingEvent {
 
     private Long userId;
     private Long eventId;
