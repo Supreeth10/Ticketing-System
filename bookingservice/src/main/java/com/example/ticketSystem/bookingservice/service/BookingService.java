@@ -46,7 +46,7 @@ public class BookingService {
         // create booking
         final BookingEvent bookingEvent = createBookingEvent(request,customer,inventoryResponse);
         // send booking to order service on a kafka topic
-        kafkaTemplate.send("bookingEvent",bookingEvent);
+        kafkaTemplate.send("booking",bookingEvent);
         log.info("Booking sent to Kakfa: {}",bookingEvent);
 
         return BookingResponse.builder()
